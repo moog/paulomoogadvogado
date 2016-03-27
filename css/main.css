@@ -1,0 +1,480 @@
+/* Font */
+
+@font-face {
+  font-family: "Aleo Light";
+  src: url("../fonts/aleo/Light/aleo-light-webfont.eot");
+  src: url("../fonts/aleo/Light/aleo-light-webfont.svg");
+  src: url("../fonts/aleo/Light/aleo-light-webfont.ttf");
+  src: url("../fonts/aleo/Light/aleo-light-webfont.woff");
+  src: url("../fonts/aleo/Light/aleo-light-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Aleo Light Italic";
+  src: url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.eot");
+  src: url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.svg");
+  src: url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.ttf");
+  src: url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.woff");
+  src: url("../fonts/aleo/Light Italic/aleo-lightitalic-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Aleo Regular";
+  src: url("../fonts/aleo/Regular/aleo-regular-webfont.eot");
+  src: url("../fonts/aleo/Regular/aleo-regular-webfont.svg");
+  src: url("../fonts/aleo/Regular/aleo-regular-webfont.ttf");
+  src: url("../fonts/aleo/Regular/aleo-regular-webfont.woff");
+  src: url("../fonts/aleo/Regular/aleo-regular-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Aleo Regular Italic";
+  src: url("../fonts/aleo/Regular Italic/aleo-italic-webfont.eot");
+  src: url("../fonts/aleo/Regular Italic/aleo-italic-webfont.svg");
+  src: url("../fonts/aleo/Regular Italic/aleo-italic-webfont.ttf");
+  src: url("../fonts/aleo/Regular Italic/aleo-italic-webfont.woff");
+  src: url("../fonts/aleo/Regular Italic/aleo-italic-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Aleo Bold";
+  src: url("../fonts/aleo/Bold/aleo-bold-webfont.eot");
+  src: url("../fonts/aleo/Bold/aleo-bold-webfont.svg");
+  src: url("../fonts/aleo/Bold/aleo-bold-webfont.ttf");
+  src: url("../fonts/aleo/Bold/aleo-bold-webfont.woff");
+  src: url("../fonts/aleo/Bold/aleo-bold-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Aleo Bold Italic";
+  src: url("../fonts/aleo/Bold Italic/aleo-bolditalic-webfont.eot");
+  src: url("../fonts/aleo/Bold Italic/aleo-bolditalic-webfont.svg");
+  src: url("../fonts/aleo/Bold Italic/aleo-bolditalic-webfont.ttf");
+  src: url("../fonts/aleo/Bold Italic/aleo-bolditalic-webfont.woff");
+  src: url("../fonts/aleo/Bold Italic/aleo-bolditalic-webfont.woff2");
+}
+
+h1 {
+  font-family: "Aleo Light";
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+h1 span {
+  font-family: "Aleo Bold";
+  font-size: 1.1em;
+}
+
+strong {
+  font-family: "Aleo Bold";
+}
+
+/* BANNER
+#banner-top {
+  width: 100%;
+  height: 0;
+  padding-top:50%;
+  background-image: url(../img/bg-top-min.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#banner-top .container {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+#banner-top .container p {
+  font-family: "Aleo Light";
+  font-size: 1.2em;
+}
+*/
+
+#banner-top {
+  margin-top: -30%;
+}
+
+.carousel-caption {
+  top: 80%;
+  transform: translateY(-80%);
+  bottom: initial;
+}
+
+/* NAV */
+
+#navbar {
+background: rgba(0, 0, 0, 0.2); /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Standard syntax */
+
+}
+
+.navbar {
+  border: none;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.2); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Standard syntax */
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
+
+.navbar .container {
+  margin-top: 10px;
+}
+
+button.navbar-toggle {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5em;
+}
+
+.navbar-nav a {
+  margin-top: 10px;
+  font-family: "Aleo Bold";
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-nav li a:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.navbar-nav li a:hover span {
+  padding: 0 0 5px 0;
+  border-bottom: 2px solid #fff;
+}
+
+/* SOBRE */
+#sobre {
+  background: url(../img/bg-diagonal.png) no-repeat left top;
+  padding-top: 174px;
+  padding-bottom: 150px;
+  margin-top: -216px;
+  position: relative;
+}
+
+#sobre h1 {
+  font-size: 3.5em;
+}
+
+#sobre .subtitulo {
+  font-family: "Aleo Bold";
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-top: -12px;
+}
+
+#sobre .aspa-especial {
+  font-family: "Aleo Bold";
+  text-align: right;
+  color: rgba(151, 151, 151, 1);
+  font-size: 4.8em;
+  line-height: 0.3em;
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+
+#sobre .highlighted {
+  font-family: "Aleo Light";
+  text-align: right;
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+
+/*#sobre .bandeira {
+  margin-top: -142px;
+}*/
+
+#sobre .sobre-paulo {
+  font-family: "Aleo Light";
+  font-size: 1.4em;
+  margin-top: 25px;
+  line-height: 1.7em;
+}
+
+/* ATUAÇÃO */
+
+#atuacao {
+  background: url(../img/bg-areas.jpg) no-repeat left top;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding-bottom: 168px;
+}
+
+#atuacao h1 {
+  font-size: 3.2em;
+  margin-top: 125px;
+}
+
+#atuacao h1 + p {
+  font-family: "Aleo Light";
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+
+#atuacao .col-md-3 {
+  margin-top: 40px;
+}
+
+#atuacao .item-atuacao {
+  text-align: left;
+  background: url(../img/box-area.png) no-repeat left top;
+  padding: 24px 35px 60px;
+  margin: 0 auto;
+  width: 212px;
+}
+
+#atuacao .item-atuacao h2 {
+  font-family: "Aleo Bold";
+  font-size: 1.9em;
+  margin-top: 27px;
+}
+
+#atuacao .item-atuacao h2 + p {
+  font-family: "Aleo Light";
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#atuacao .col-md-3:last-child .item-atuacao p {
+  margin-top: 39px;
+}
+
+
+/* CONTATO */
+#contato {
+}
+
+#contato .bottom-flag {
+  text-align: center;
+}
+
+#contato h1 {
+  text-align: center;
+  font-size: 3.2em;
+}
+
+#contato h1 + p {
+  text-align: center;
+  font-family: "Aleo Light";
+  font-size: 1.3em;
+  margin-top: 15px;
+}
+
+#contato > div > .row:last-child {
+  margin-top: 50px;
+}
+
+#contato form input {
+  height: 45px;
+}
+
+#contato form input, #contato form textarea {
+  border-radius: 0;
+  border: 1px solid rgba(156, 156, 156, 1);
+  font-family: "Aleo Bold";
+  font-size: 1em;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#contato form button {
+  color: rgba(160, 126, 6, 1);
+  background: rgba(252, 226, 132, 1);
+  border-radius: 0;
+  border: 1px solid rgba(160, 126, 6, 1);
+  font-family: "Aleo Bold";
+  padding: 10px 12px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#contato .col-md-5 + .numero-oab {
+  margin-left: 20px;
+}
+
+#contato .numero-oab {
+  margin-bottom: 7px;
+}
+
+#contato i {
+  font-size: 2em;
+  line-height: 52px;
+}
+
+#contato .fa-mobile {
+  font-size: 3.8em;
+}
+
+#contato .contato-opcoes span {
+  font-family: "Aleo Bold";
+  position:relative;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 120px;
+  background: rgba(35, 35, 35, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 15px 0 10px;
+}
+
+.numero-oab {
+  font-size: 1.1em;
+  font-family: "Aleo Bold";
+}
+
+.numero-oab p:last-child {
+  font-family: "Aleo Light";
+  margin-top: -10px;
+}
+
+footer .footer-center {
+  font-size: 1em;
+  font-family: "Aleo Light";
+}
+
+
+/******* MEDIAS *******/
+
+/* Large desktop */
+@media (min-width: 1400px) {
+  #banner-top {
+    margin-top: -30%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 3em;
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 1399px) {
+  #banner-top {
+    margin-top: -20%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.5em;
+    padding: 0 150px;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+
+@media (max-width: 1199px) {
+  #banner-top {
+    margin-top: -20%;
+  }
+
+  .carousel-caption {
+    top: 70%;
+    transform: translateY(-70%);
+  }
+
+  .carousel-caption h1 {
+    font-size: 2em;
+    padding: 0 100px;
+  }
+
+  #atuacao {
+    padding-bottom: 0px;
+  }
+
+  #atuacao h1 {
+    margin-top: 25px;
+  }
+
+  #atuacao .col-md-3 {
+    margin-top: 20px;
+  }
+
+  #atuacao .item-atuacao {
+    padding-bottom: 54px;
+  }
+
+  #contato .numero-oab {
+    margin-top: 60px;
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+    .carousel-caption h1 {
+      padding: 0;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+    #banner-top {
+      margin-top: -10%;
+    }
+
+    .carousel-caption {
+      top: 54%;
+      transform: translateY(-54%);
+
+    }
+
+}
+
+@media (max-width: 720px) {
+  #atuacao h1 + p {
+    font-size: 1.1em;
+  }
+    #banner-top {
+     margin-top: -5%;
+    }
+}
+
+@media (max-width: 610px) {
+  #atuacao h1 {
+    margin-top: 15px;
+  }
+
+  .carousel-caption {
+    top: 54%;
+    transform: translateY(-54%);
+  }
+  .carousel-caption h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 520px) {
+  #atuacao h1 + p {
+    font-size: 1.1em;
+  }
+
+  .carousel-caption {
+    top: 45%;
+    transform: translateY(-45%);
+  }
+  .carousel-caption h1 {
+    font-size: 1.5em;
+  }
+}
