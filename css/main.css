@@ -103,21 +103,12 @@ strong {
 
 /* NAV */
 
-<<<<<<< HEAD
-#navbar.navbar-collapse.in {
-  background: rgba(0, 0, 0, 0.2); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Standard syntax */
-=======
 #navbar {
 background: rgba(0, 0, 0, 0.2); /* For browsers that do not support gradients */
 background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Safari 5.1 to 6.0 */
 background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Opera 11.1 to 12.0 */
 background: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Firefox 3.6 to 15 */
 background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Standard syntax */
->>>>>>> master
 
 }
 
@@ -211,11 +202,7 @@ button.navbar-toggle {
 /* ATUAÇÃO */
 
 #atuacao {
-<<<<<<< HEAD
-  background: url(../img/bg-areas.jpg) repeat left top;
-=======
   background: url(../img/bg-areas.jpg) no-repeat left top;
->>>>>>> master
   color: rgba(255, 255, 255, 1);
   text-align: center;
   padding-bottom: 168px;
@@ -442,21 +429,6 @@ footer .footer-center {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 
-<<<<<<< HEAD
-
-    #navbar {
-      margin-top: 24px
-    }
-  #navbar {
-    background: rgba(0, 0, 0, 0.2); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Standard syntax */
-
-  }
-=======
->>>>>>> master
     #banner-top {
       margin-top: -10%;
     }
@@ -494,40 +466,15 @@ footer .footer-center {
 
 /* Landscape phones and down */
 @media (max-width: 520px) {
-<<<<<<< HEAD
-
-=======
->>>>>>> master
   #atuacao h1 + p {
     font-size: 1.1em;
   }
 
   .carousel-caption {
-<<<<<<< HEAD
-    top: 70%;
-    transform: translateY(-45%);
-  }
-
-  .carousel-caption h1 {
-    font-size: 1.6em;
-  }
-
-  .carousel-caption p {
-    font-size: 0.8em;
-  }
-
-  #sobre {
-    background: none;
-    padding-top: 15px;
-    padding-bottom: 150px;
-    margin-top: 0;
-    position: relative;
-=======
     top: 45%;
     transform: translateY(-45%);
   }
   .carousel-caption h1 {
     font-size: 1.5em;
->>>>>>> master
   }
 }
