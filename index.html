@@ -42,7 +42,7 @@
           </button>
           <a class="navbar-brand" href="#">
             <picture>
-              <source srcset="img/logo-simbolo.png" media="(max-width: 480px)">
+              <source srcset="img/logo-simbolo.png" media="(max-width: 900px)">
               <source srcset="img/logo.png">
               <img srcset="img/logo.png" alt="My default image">
             </picture>
@@ -64,7 +64,8 @@
         <div class="item active">
         <img srcset="img/bg-top-min.jpg" alt="My default image" class="img-responsive">
           <div class="carousel-caption">
-            <h1>Mais de <span>20 anos</span> de experiência em direito <span>trabalhista</span>, de <span>família</span>, <span>cível</span> e <span>inventários</span>.</h1>
+            <h1 class="hidden-xs">Mais de <span>20 anos</span> de experiência em direito <span>trabalhista</span>, de <span>família</span>, <span>cível</span> e <span>inventários</span>.</h1>
+            <h1 class="visible-xs">Mais de <span>20 anos</span> de experiência.</h1>
             <p>
               OAB/RS 51.771
             </p>
@@ -73,14 +74,6 @@
       </div>
     </div>
 
-    <!-- <div id="banner-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-md-offset-2">
-          </div>
-        </div>
-      </div>
-    </div> -->
     <section id="sobre">
       <div class="container">
         <div class="row">
@@ -90,9 +83,6 @@
               O que você precisa saber
             </p>
           </div>
-          <!--<div class="col-md-1 col-md-offset-7">
-            <img src="img/flag.png" alt="Bandeira" class="bandeira" />
-          </div>-->
         </div>
         <div class="row">
           <div class="col-md-4 sobre-paulo">
@@ -134,25 +124,25 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-6">
+            <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-12">
               <div class="item-atuacao">
                 <h2>Direito Trabalhista</h2>
                 <p>Solução de problemas diversos como os que acontecem no ambiente de trabalho.</p>
               </div>
             </div>
-            <div class="col-md-3 col-md-offset-0 col-sm-4 col-xs-6">
+            <div class="col-md-3 col-md-offset-0 col-sm-4 col-xs-12">
               <div class="item-atuacao">
                 <h2>Direito Familiar</h2>
                 <p>Solução de problemas conjugais ou que envolvem outras coisas bizarras.</p>
               </div>
             </div>
-            <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-6">
+            <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-12">
               <div class="item-atuacao">
                 <h2>Direito Cível</h2>
                 <p>Esse já complicou porque realmente não sei o que quer dizer, mas okay.</p>
               </div>
             </div>
-            <div class="col-md-3 col-md-offset-0 col-sm-4 col-xs-6">
+            <div class="col-md-3 col-md-offset-0 col-sm-4 col-xs-12">
               <div class="item-atuacao">
                 <h2>Inventários</h2>
                 <p>Inventários são coisas legais que o Paulo comprende com muita profunidade.</p>
@@ -198,23 +188,23 @@
           </div>
           <div class="col-md-5">
             <div class="row numero-oab">
-              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-8 col-xs-offset-3">
+              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-12">
                 <p>Paulo Moog - OAB/RS 71-0014</p>
                 <p>Porto Alegre - RS</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-8 col-xs-offset-3">
+              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-12">
                 <p class="contato-opcoes"><i class="fa fa-mobile"></i> <span style="left: 15px;top: -13px;">(51) 3255.6985 / (51) 9845.9877</span></p>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-8 col-xs-offset-3">
+              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-12">
                 <p class="contato-opcoes"><i class="fa fa-whatsapp"></i> <span style="left: 14px;top: -4px;">(51) 9845.9877</span></p>
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-8 col-xs-offset-3">
+              <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-12">
                 <p class="contato-opcoes"><i class="fa fa-facebook"></i> <span style="left: 22px;top: -4px;"><a href="#">facebook.com/advogadopaulomoog</a></span></p>
               </div>
             </div>
@@ -239,16 +229,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        ajustarBandeira();
-
         $('.carousel').carousel();
 
-        $(window).on("resize", ajustarBandeira);
-
-        function ajustarBandeira(){
-          var marginTop = parseInt($(".bandeira").css("margin-top"));
-          $(".bandeira").css("margin-top",  (-($(".bandeira").offset().left / 10) + $(".carousel .item.active").offset().top / 100) + "px");
-        }
+        $(".navbar-toggle").on("mousedown", function(){
+          $("#navbar").addClass("menu-mobile");
+        });
       });
     </script>
   </body>
