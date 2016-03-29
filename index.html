@@ -170,22 +170,26 @@
         </div>
         <div class="row">
           <div class="col-md-5 col-md-offset-1">
-            <form>
+            <form id="contact-form" action="//formspree.io/your@email.com" method="post">
+              <input class="hidden" type="text" name="_gotcha">
+              <input type="hidden" name="_subject" value="Subject">
+              <input type="hidden" name="_cc" value="mateusmoog@gmail.com">
               <div class="form-group">
-                <input type="text" class="form-control" id="formNome" placeholder="Nome">
+                <input type="text" class="form-control" id="formNome" placeholder="Nome" required>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="formEmail" placeholder="Email">
+                <input type="email" class="form-control" id="formEmail" placeholder="Email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="formTelefone" placeholder="Telefone">
+                <input type="text" class="form-control" id="formTelefone" placeholder="Telefone" >
               </div>
               <div class="form-group">
-                <textarea rows="5" class="form-control" id="formMensagem" placeholder="Mensagem"></textarea>
+                <textarea rows="5" class="form-control" id="formMensagem" placeholder="Mensagem" required></textarea>
               </div>
               <button type="submit" class="btn btn-default btn-block">Enviar Mensagem</button>
             </form>
           </div>
+
           <div class="col-md-5">
             <div class="row numero-oab">
               <div class="col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-4 col-xs-12">
@@ -227,8 +231,11 @@
     </footer>
     <script src="js/jquery-2.2.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/contato.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        Contato.iniciar();
+
         $('.carousel').carousel();
 
       });
