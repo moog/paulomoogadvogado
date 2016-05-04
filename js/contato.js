@@ -32,10 +32,11 @@ var Contato = function() {
           dataType: 'json',
           beforeSend: function() {
             btn.prop('disabled', true);
-            btn.html("Enviando <span class='loader'></span>");
+            btn.html("<div class='spinner'><div class='dot1'></div><div class='dot2'></div></div>");
           },
           success: function(data) {
             btn.html("Mensagem enviada!");
+            $(".form-control").val("");
             setTimeout(function(){
               btn.prop('disabled', false);
               btn.html("Enviar mensagem");
